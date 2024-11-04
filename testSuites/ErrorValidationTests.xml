@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name ="Suite">
+
+<groups>
+<run>
+<include name="ErrorHandling"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Submit oredr Test">
+    <classes>
+      <class name="rahuallshettyacademy.Test.Standalone2"/>
+     </classes>
+  </test> <!-- Test -->
+  
+      <test thread-count="5" name="ErrorValidationTest">
+    <classes>
+  <class name="rahuallshettyacademy.Test.ErrorValidation"/>
+     </classes>
+  </test> <!-- Test -->
+  <!--above both the classes will run sequentially-->
+</suite> <!-- Suite -->
+  
+      
