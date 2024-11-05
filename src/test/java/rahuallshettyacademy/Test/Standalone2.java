@@ -44,7 +44,7 @@ public class Standalone2 extends BaseTest {
 	
 		String countryname ="India";
 		//launch application and go to landing page via @beforeMethod code inside the BaseTest.java
-		
+		//// checking code
 		// create object of Landing]page class
 		Productcatelogue productcalte = landing.loginApp(input.get("email"), input.get("password"));
 		List<WebElement> products = productcalte.getProductList();
